@@ -78,8 +78,7 @@ public class MainActivity extends Activity implements ServiceConnection {
             }
 
             SharedPreferences.Editor editor = sp.edit();
-            // editor.putString("apiUrl", "http://192.168.1.100:8080/api");
-            editor.putString("apiUrl", "https://gps.e-russkiy.com/api");
+            editor.putString("apiUrl", "http://192.168.1.100:8080/api");
             editor.putString("apiToken", "test");
             editor.putString("deviceId", did);
             editor.commit();
